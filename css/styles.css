@@ -1118,3 +1118,219 @@ a {
         animation: none;
     }
 }
+
+
+/* =====================================
+   SPRINT 4 — ABOUT PAGE
+===================================== */
+
+.page-hero {
+    padding: 210px 0 110px;
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 20%,
+            rgba(0,180,255,.12), transparent 55%),
+        linear-gradient(135deg, #08111F, #0C1B31);
+}
+
+.page-hero h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.15;
+    margin: 18px 0 22px;
+}
+
+.page-hero p {
+    max-width: 640px;
+    margin: auto;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.story-section,
+.mission-section,
+.values-section,
+.process-section {
+    padding: 110px 0;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.story-content h2 {
+    font-size: clamp(30px, 3.5vw, 44px);
+    line-height: 1.25;
+    margin: 18px 0 25px;
+}
+
+.story-content p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.story-visual {
+    min-height: 380px;
+    background: linear-gradient(145deg, #102B50, #091526);
+    border: 1px solid rgba(0,180,255,.25);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+    padding: 25px;
+}
+
+.story-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 110px;
+    font-weight: 800;
+    color: var(--accent);
+    text-shadow: 0 0 45px rgba(0,180,255,.25);
+}
+
+.story-visual span {
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.mission-section,
+.process-section {
+    background: #0C1728;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.mission-card {
+    padding: 45px;
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 18px;
+}
+
+.mission-icon {
+    color: var(--accent);
+    font-size: 38px;
+}
+
+.mission-card h3 {
+    font-size: 23px;
+    margin: 15px 0;
+}
+
+.mission-card p {
+    color: var(--muted);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.value-item {
+    border-top: 2px solid rgba(0,180,255,.5);
+    padding-top: 25px;
+}
+
+.value-item span {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.value-item h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.value-item p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.process-step {
+    position: relative;
+}
+
+.process-step span {
+    display: inline-grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.process-step h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .values-grid,
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .page-hero {
+        padding: 170px 0 80px;
+    }
+
+    .story-section,
+    .mission-section,
+    .values-section,
+    .process-section {
+        padding: 75px 0;
+    }
+
+    .mission-grid,
+    .values-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card {
+        padding: 30px;
+    }
+
+    .story-visual {
+        min-height: 280px;
+    }
+
+    .story-logo {
+        font-size: 85px;
+    }
+}
