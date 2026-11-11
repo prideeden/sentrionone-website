@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact SentrionOne Technologies for software development, cybersecurity, repairs and IT support.">
+
+    <title>Contact Us | SentrionOne Technologies</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="SentrionOne logo">
+            <span>Sentrion<span class="accent">One</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="nav-links">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">GET IN TOUCH</span>
+
+            <h1>
+                Let's Talk About
+                <span class="accent">Your Project.</span>
+            </h1>
+
+            <p>
+                Have a question, technology challenge or project
+                idea? Tell us what you need.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="container contact-grid">
+
+            <!-- LEFT: CONTACT INFORMATION -->
+            <div class="contact-info">
+                <span class="eyebrow">CONTACT SENTRIONONE</span>
+
+                <h2>Let's Build Something Great.</h2>
+
+                <p>
+                    Whether you're planning a website,
+                    need a custom application or require
+                    technical assistance, we'd like
+                    to hear from you.
+                </p>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>Contact details coming soon</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">⌖</div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Zimbabwe</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="contact-icon">◷</div>
+                    <div>
+                        <h3>Enquiries</h3>
+                        <p>Send us your project requirements</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: CONTACT FORM -->
+            <div class="contact-form-wrapper">
+
+                <h2>Send an Enquiry</h2>
+
+                <p class="form-intro">
+                    Complete the form below to prepare
+                    your message.
+                </p>
+
+                <form id="contactForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text"
+                                   id="fullName"
+                                   name="fullName"
+                                   placeholder="Your full name"
+                                   autocomplete="name"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="you@example.com"
+                                   autocomplete="email"
+                                   required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="Website Development">
+                                Website Development
+                            </option>
+                            <option value="Mobile App Development">
+                                Mobile App Development
+                            </option>
+                            <option value="Custom Software">
+                                Custom Software Development
+                            </option>
+                            <option value="Cybersecurity">
+                                Cybersecurity
+                            </option>
+                            <option value="Device Repairs">
+                                Computer & Phone Repairs
+                            </option>
+                            <option value="Networking and IT Support">
+                                Networking & IT Support
+                            </option>
+                            <option value="Other">
+                                Other Enquiry
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  placeholder="Describe your project or technical problem..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-primary contact-submit">
+                        Prepare Email
+                    </button>
+
+                    <p class="form-note">
+                        This opens your email application.
+                        Your message is not submitted directly
+                        to our website yet.
+                    </p>
+
+                    <p id="formStatus" role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 SentrionOne Technologies. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
