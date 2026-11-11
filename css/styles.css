@@ -748,3 +748,373 @@ a {
         scroll-behavior: auto !important;
     }
 }
+
+
+/* =====================================
+   SPRINT 3 — WHY CHOOSE US
+===================================== */
+
+.why-section {
+    padding: 120px 0;
+    background: var(--dark);
+    overflow: hidden;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 90px;
+}
+
+.why-content h2 {
+    font-size: clamp(32px, 3.5vw, 46px);
+    line-height: 1.2;
+    margin: 18px 0 25px;
+}
+
+.why-content h2 .accent {
+    display: block;
+}
+
+.why-intro {
+    color: var(--muted);
+    margin-bottom: 35px;
+    max-width: 540px;
+}
+
+.why-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.why-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.why-check {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(0,180,255,.12);
+    border: 1px solid rgba(0,180,255,.4);
+    color: var(--accent);
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.why-item h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.why-item p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* WHY US ILLUSTRATION */
+
+.why-visual {
+    min-height: 460px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
+}
+
+.why-glow {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(0,180,255,.12);
+    filter: blur(65px);
+    z-index: -1;
+}
+
+.why-orbit {
+    width: 310px;
+    height: 310px;
+    border: 1px dashed rgba(0,180,255,.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: why-float 5s ease-in-out infinite;
+}
+
+.why-shield {
+    width: 190px;
+    height: 220px;
+    background: linear-gradient(145deg, #164A78, #0A1D34);
+    border: 2px solid var(--accent);
+    clip-path: polygon(
+        50% 0%, 95% 18%, 95% 60%,
+        80% 82%, 50% 100%, 20% 82%,
+        5% 60%, 5% 18%
+    );
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 40px rgba(0,180,255,.2);
+}
+
+.shield-check {
+    font-size: 85px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.why-floating-label {
+    position: absolute;
+    padding: 10px 16px;
+    border-radius: 9px;
+    background: #13243B;
+    border: 1px solid rgba(0,180,255,.3);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.why-label-one {
+    top: 12%;
+    right: 0;
+}
+
+.why-label-two {
+    bottom: 15%;
+    right: 0;
+}
+
+.why-label-three {
+    top: 45%;
+    left: 0;
+}
+
+@keyframes why-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* =====================================
+   SPRINT 3 — REPAIRS
+===================================== */
+
+.repairs-section {
+    padding: 110px 0;
+    background: #0C1728;
+}
+
+.repairs-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.repair-feature {
+    padding: 45px;
+    background: linear-gradient(145deg, #123D67, #0B2139);
+    border: 1px solid rgba(0,180,255,.25);
+    border-radius: 20px;
+}
+
+.repair-feature-icon {
+    font-size: 55px;
+    margin-bottom: 28px;
+}
+
+.repair-type {
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.repair-feature h3 {
+    font-size: 27px;
+    line-height: 1.3;
+    margin: 14px 0;
+}
+
+.repair-feature p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 28px;
+}
+
+.repair-link {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.repair-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.repair-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 15px;
+}
+
+.repair-small-icon {
+    font-size: 30px;
+}
+
+.repair-list-item h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.repair-list-item p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.repairs-note {
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+/* =====================================
+   SPRINT 3 — CALL TO ACTION
+===================================== */
+
+.cta-section {
+    padding: 100px 0;
+    background: var(--dark);
+}
+
+.cta-content {
+    padding: 80px 35px;
+    text-align: center;
+    border-radius: 24px;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0,180,255,.2),
+            transparent 60%
+        ),
+        linear-gradient(135deg, #0A4D9B, #0A2342);
+    border: 1px solid rgba(0,180,255,.25);
+}
+
+.cta-content .eyebrow {
+    color: #A6E7FF;
+}
+
+.cta-content h2 {
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.cta-content h2 span {
+    display: block;
+}
+
+.cta-content p {
+    color: #D9E3F0;
+    max-width: 580px;
+    margin: 0 auto 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cta-primary {
+    background: white;
+    color: #08111F;
+}
+
+.cta-secondary {
+    border: 1px solid rgba(255,255,255,.65);
+    color: white;
+}
+
+/* =====================================
+   SPRINT 3 — MOBILE RESPONSIVENESS
+===================================== */
+
+@media (max-width: 900px) {
+    .why-grid,
+    .repairs-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .why-visual {
+        min-height: 380px;
+    }
+}
+
+@media (max-width: 600px) {
+    .why-section,
+    .repairs-section,
+    .cta-section {
+        padding: 75px 0;
+    }
+
+    .why-visual {
+        min-height: 320px;
+    }
+
+    .why-orbit {
+        width: 240px;
+        height: 240px;
+    }
+
+    .why-shield {
+        width: 140px;
+        height: 165px;
+    }
+
+    .shield-check {
+        font-size: 60px;
+    }
+
+    .why-floating-label {
+        font-size: 9px;
+        padding: 7px 10px;
+    }
+
+    .repair-feature {
+        padding: 30px;
+    }
+
+    .repair-list-item {
+        padding: 22px;
+        gap: 15px;
+    }
+
+    .cta-content {
+        padding: 55px 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .why-orbit {
+        animation: none;
+    }
+}
