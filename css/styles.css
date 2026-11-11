@@ -1773,3 +1773,233 @@ a {
 html {
     scroll-padding-top: 120px;
 }
+
+
+/* =====================================
+   PHOENIX SPRINT 5 — EXPLORE PAGE
+===================================== */
+
+.explore-hero .btn {
+    margin-top: 30px;
+}
+
+.explore-section {
+    padding: 110px 0;
+    background: var(--dark);
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.explore-card {
+    padding: 35px;
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 18px;
+    transition: transform .3s, border-color .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.explore-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0,180,255,.45);
+}
+
+.explore-icon {
+    width: 65px;
+    height: 65px;
+    display: grid;
+    place-items: center;
+    background: rgba(0,180,255,.1);
+    border-radius: 15px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.explore-card h3 {
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.explore-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+.explore-link {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.explore-link:hover {
+    color: white;
+}
+
+.explore-status {
+    padding: 9px 14px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* MEMBERSHIP SECTION */
+
+.membership-section {
+    padding: 100px 0;
+    background: #0C1728;
+}
+
+.membership-box {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    align-items: center;
+    gap: 50px;
+    padding: 65px;
+    background: linear-gradient(
+        135deg, #102C4F, #0B192B
+    );
+    border: 1px solid rgba(0,180,255,.25);
+    border-radius: 24px;
+}
+
+.membership-content h2 {
+    font-size: clamp(30px, 3.5vw, 43px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.membership-content h2 .accent {
+    display: block;
+}
+
+.membership-content p {
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.membership-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.membership-benefits span {
+    color: #D9E3F0;
+    font-size: 14px;
+}
+
+.membership-coming {
+    display: inline-block;
+    padding: 12px 18px;
+    background: rgba(0,180,255,.1);
+    border: 1px solid rgba(0,180,255,.25);
+    color: var(--accent);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.membership-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.member-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(
+        145deg, #0A4D9B, #00B4FF
+    );
+    color: white;
+    font-size: 65px;
+    font-weight: 800;
+    box-shadow: 0 0 65px rgba(0,180,255,.2);
+}
+
+.member-preview {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.1);
+}
+
+.member-preview span {
+    color: var(--accent);
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.member-preview h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.member-preview p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 900px) {
+    .explore-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .membership-box {
+        grid-template-columns: 1fr;
+        padding: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .explore-section,
+    .membership-section {
+        padding: 75px 0;
+    }
+
+    .explore-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-card {
+        padding: 28px;
+    }
+
+    .membership-box {
+        padding: 30px 22px;
+    }
+
+    .membership-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .member-avatar {
+        width: 135px;
+        height: 135px;
+        font-size: 48px;
+    }
+}
+ 
+#explore-features {
+    scroll-margin-top: 130px;
+}
