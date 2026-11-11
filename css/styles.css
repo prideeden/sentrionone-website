@@ -352,6 +352,301 @@ a {
     font-size: 13px;
 }
 
+
+/* =====================================
+   SPRINT 2 — SERVICES
+===================================== */
+
+.services-section,
+.projects-section {
+    padding: 110px 0;
+}
+
+.services-section {
+    background: var(--dark);
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 3.5vw, 44px);
+    line-height: 1.25;
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    padding: 32px 28px;
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 18px;
+    transition: transform .3s, border-color .3s,
+                box-shadow .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0,180,255,.45);
+    box-shadow: 0 15px 40px rgba(0,0,0,.15);
+}
+
+.service-icon {
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.service-card a {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section-action {
+    text-align: center;
+    margin-top: 45px;
+}
+
+/* =====================================
+   SPRINT 2 — FEATURED PROJECTS
+===================================== */
+
+.projects-section {
+    background: #0C1728;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    overflow: hidden;
+    border-radius: 18px;
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,.08);
+    transition: transform .3s, border-color .3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0,180,255,.4);
+}
+
+.project-preview {
+    height: 300px;
+    padding: 45px 35px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.lab-preview {
+    background: linear-gradient(135deg, #123A64, #071627);
+}
+
+.web-preview {
+    background: linear-gradient(135deg, #064B76, #0B1730);
+}
+
+.preview-tag {
+    position: absolute;
+    top: 17px;
+    left: 22px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #D7F5FF;
+}
+
+.preview-window {
+    height: 260px;
+    background: #101C2E;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+.window-bar {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 12px;
+    background: #1A304A;
+}
+
+.window-bar span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #54718D;
+}
+
+.window-content {
+    display: flex;
+    height: 230px;
+}
+
+.window-sidebar {
+    width: 23%;
+    background: #142A43;
+    border-right: 1px solid #25425D;
+}
+
+.window-main {
+    flex: 1;
+    padding: 22px;
+}
+
+.mock-chart {
+    height: 85px;
+    border-radius: 8px;
+    background: linear-gradient(
+        135deg, #0A4D9B, #00B4FF
+    );
+    opacity: .7;
+}
+
+.mock-lines {
+    width: 80%;
+    height: 9px;
+    background: #365A78;
+    border-radius: 10px;
+    margin-top: 24px;
+    box-shadow: 0 18px #294760, 0 36px #294760;
+}
+
+.website-mockup {
+    padding: 20px 28px;
+}
+
+.mock-nav {
+    height: 12px;
+    width: 100%;
+    border-radius: 6px;
+    background: #244361;
+    margin-bottom: 35px;
+}
+
+.mock-heading {
+    width: 70%;
+    height: 20px;
+    border-radius: 5px;
+    background: #00B4FF;
+}
+
+.mock-subheading {
+    width: 85%;
+    height: 9px;
+    margin-top: 16px;
+    border-radius: 5px;
+    background: #45637C;
+}
+
+.mock-button {
+    width: 100px;
+    height: 25px;
+    border-radius: 6px;
+    margin-top: 25px;
+    background: #0A4D9B;
+}
+
+.project-info {
+    padding: 28px;
+}
+
+.project-category {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.project-info h3 {
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.project-info p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags span {
+    background: #1D3752;
+    color: #B9DFF4;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+/* =====================================
+   SPRINT 2 — RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .services-section,
+    .projects-section {
+        padding: 75px 0;
+    }
+
+    .services-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 26px;
+    }
+
+    .project-preview {
+        height: 250px;
+        padding: 45px 22px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+}
+
+
 /* MOBILE */
 
 @media (max-width: 900px) {
