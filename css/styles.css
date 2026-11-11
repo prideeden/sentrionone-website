@@ -1334,3 +1334,153 @@ a {
         font-size: 85px;
     }
 }
+
+
+/* =====================================
+   SPRINT 4 — SERVICES PAGE
+===================================== */
+
+.services-detail-section {
+    padding: 90px 0;
+    background: var(--dark);
+}
+
+.service-detail {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 35px;
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.service-detail:first-child {
+    padding-top: 0;
+}
+
+.service-detail:last-child {
+    border-bottom: none;
+}
+
+.service-detail-icon {
+    width: 85px;
+    height: 85px;
+    display: grid;
+    place-items: center;
+    background: var(--surface);
+    border: 1px solid rgba(0,180,255,.2);
+    border-radius: 18px;
+    font-size: 38px;
+}
+
+.service-detail-content h2 {
+    font-size: clamp(24px, 3vw, 32px);
+    margin: 8px 0 15px;
+}
+
+.service-detail-content p {
+    max-width: 700px;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.service-detail-content ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 30px;
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.service-detail-content li {
+    position: relative;
+    padding-left: 24px;
+    color: #D9E3F0;
+    font-size: 14px;
+}
+
+.service-detail-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.service-detail-link {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+    transition: color .3s;
+}
+
+.service-detail-link:hover {
+    color: white;
+}
+
+/* SERVICE PROCESS */
+
+.service-process {
+    padding: 100px 0;
+    background: #0C1728;
+}
+
+.service-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.service-process-step {
+    padding: 30px;
+    border-top: 2px solid var(--accent);
+    background: var(--surface);
+    border-radius: 0 0 15px 15px;
+}
+
+.service-process-step span {
+    color: var(--accent);
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.service-process-step h3 {
+    margin: 12px 0;
+    font-size: 19px;
+}
+
+.service-process-step p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+    .service-process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-detail-section,
+    .service-process {
+        padding: 70px 0;
+    }
+
+    .service-detail {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 0;
+    }
+
+    .service-detail-content ul {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+}
